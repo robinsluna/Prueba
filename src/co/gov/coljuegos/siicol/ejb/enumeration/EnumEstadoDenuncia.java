@@ -1,0 +1,34 @@
+package co.gov.coljuegos.siicol.ejb.enumeration;
+
+public enum EnumEstadoDenuncia {
+    REGISTRADO(1L),
+    VERIFICADO_ESCRITORIO(2L),
+    RESPUESTA_ENVIADA(3L),
+    DESCARTADO(4L),
+    ACCION_CONTROL(5L),
+    VERIFICADO_CAMPO(6L),
+    AUTO_COMISORIO(7L),
+    TRAMITE_RESOLUCION_DECOMISO_Y_DESTRUCCION(8L),
+    TRAMITE_RESOLUCION_RESULEVE_RECURSO(9L),
+    RESOLUCION_DEVOLUCION(10L),
+    RESOLUCION_DECOMISO_Y_DESTRUCCION(11L),
+    RESOLUCION_DEVOLUCION_DECOMISO_Y_DESTRUCCION(12L),
+    RESOLUCION_DEVOLUCION_CON_RECURSO(13L),
+    RESOLUCION_DECOMISO_Y_DESTRUCCION_CON_RECURSO(14L),
+    RESOLUCION_DEVOLUCION_DECOMISO_Y_DESTRUCCION_CON_RECURSO(15L);
+    
+    
+    private Long id;
+    
+    
+    EnumEstadoDenuncia(Long id) {
+        this.id = id;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+
+}

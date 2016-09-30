@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+  <persistence-unit name="siicolPU">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:/app/jdbc/jdbc/SiicolDesarrolloDS</jta-data-source>
+    <properties>
+      <property name="eclipselink.target-server" value="WebLogic_10"/>
+      <property name="javax.persistence.jtaDataSource" value="java:/app/jdbc/jdbc/SiicolDesarrolloDS"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="86701CE41F3BA2D411D22E66B4525B11"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@10.117.100.80:1521:sicoldes"/>
+      <property name="javax.persistence.jdbc.user" value="pr"/>
+    </properties>
+  </persistence-unit>
+
+  <persistence-unit name="siitoPU">
+  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:/app/jdbc/jdbc/SiitoTestDS</jta-data-source>
+    <properties>
+      <property name="eclipselink.target-server" value="WebLogic_10"/>
+      <property name="javax.persistence.jtaDataSource" value="java:/app/jdbc/jdbc/SiitoTestDS"/>
+    </properties>
+  </persistence-unit>
+  
+  <persistence-unit name="psePU">
+  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:/app/jdbc/jdbc/PSETestDS</jta-data-source>
+    <class>co.gov.coljuegos.siicol.ejb.persistencia.entity.pse.BotonPagosPse</class>
+    <properties>
+      <property name="eclipselink.target-server" value="WebLogic_10"/>
+      <property name="javax.persistence.jtaDataSource" value="java:/app/jdbc/jdbc/PSETestDS"/>
+    </properties>
+  </persistence-unit>
+
+</persistence>
