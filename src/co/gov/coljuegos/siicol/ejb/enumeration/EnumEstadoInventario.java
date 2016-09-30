@@ -4,7 +4,7 @@ package co.gov.coljuegos.siicol.ejb.enumeration;
 public enum EnumEstadoInventario {
 
     //A para activo, PR para pendiente de Retiro, PA para pendiente de activación y R para retirado
-    PENDIENTE_APROBAR("PA", "PENDIENTE APROBAR"),
+    PENDIENTE_ACTIVACION("PA", "PENDIENTE_ACTIVACIÓN"),
     PENDIENTE_RETIRO("PR", "PENDIENTE RETIRO"),
     RETIRADO("R", "RETIRADO"),
     ACTIVO("A", "ACTIVO"),
