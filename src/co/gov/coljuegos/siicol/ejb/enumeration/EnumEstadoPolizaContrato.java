@@ -8,7 +8,8 @@ public enum EnumEstadoPolizaContrato {
     BORRADOR_REQUERIMIENTO_OPERADOR(3L),
     BORRADOR_INFORME_FALTA_POLIZA(4L),
     REQUERIMIENTO_OPERADOR(5L),
-    INACTIVO(6L);
+    INACTIVO(6L),
+    BORRADOR(7L);
 
     /** ID del Estado de la Novedad. */
     private Long id;

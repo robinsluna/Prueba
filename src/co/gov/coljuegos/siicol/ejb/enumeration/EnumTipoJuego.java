@@ -12,7 +12,9 @@ public enum EnumTipoJuego {
     PROMOCIONALES(7L),
     NOVEDOSOS(8L),
     OTRAS_APUESTAS(9L),
-    DECLARACION_DE_PREMIOS(10L);    
+    DECLARACION_DE_PREMIOS(10L),
+    ACDV(11L);
+    
     
     /** ID. */
     private Long id;    
